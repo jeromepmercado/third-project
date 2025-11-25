@@ -74,7 +74,7 @@
 
     <div id="home" class="hero">
         <!-- navbar -->
-        <div class="container position-sticky top-0 z-1">
+        <div class="container mt-2 position-sticky top-0 z-1">
             <nav class="navbar px-3 py-1 rounded-5 navbar-expand-lg navbar-custom d-flex justify-content-between">
                 <a class="navbar-brand" href="#home">
                     <img src="assets/images/dsLogo.png" alt="Demon Slayer Logo" width="50" height="50">
@@ -134,7 +134,7 @@
     <!-- hashiras -->
     <div id="hashiras" class="container-fluid hashiraSection">
         <div class="row">
-            <div class="col my-5 mx-1 text-center">
+            <div class="col my-5 mx-2 text-center">
                 <h1 class="hashiraName">HASHIRAS</h1>
                 <h5 class="my-3">The nine most formidable and proficient swordsmen in the Demon Slayer Corps, the
                     Hashira are the
@@ -150,7 +150,7 @@
     <!-- uppermoons -->
     <div id="uppermoons" class="container-fluid uppermoonSection">
         <div class="row">
-            <div class="col my-5 mx-1 text-center">
+            <div class="col my-5 mx-2 text-center">
                 <h1 class="uppermoonName">UPPERMOONS</h1>
                 <h5 class="my-3">The Twelve Kizuki, a group of formidable demons that serve Muzan Kibutsuji, the Demon
                     King, include the six greatest demons known as the Upper Moons. Upper Moon One is the strongest on a
@@ -166,7 +166,7 @@
     <!-- kamaboko squad -->
     <div id="kamaboko" class="container-fluid kamabokoSection">
         <div class="row">
-            <div class="col my-5 mx-1 text-center">
+            <div class="col my-5 mx-2 text-center">
                 <h1 class="kamabokoName">KAMABOKO SQUAD</h1>
                 <h5 class="my-3">Tanjiro Kamado, Zenitsu Agatsuma, Inosuke Hashibira, and Tanjiro's demon sister, Nezuko
                     Kamado, make up the primary squad of young demon slayers in the anime and manga Demon Slayer, which
@@ -196,69 +196,13 @@
     </div>
 
 
+    <!-- javascript codes -->
+    <script src="assets/js/arcs.js"></script>
+    <script src="assets/js/hashiras.js"></script>
+    <script src="assets/js/uppermoons.js"></script>
+    <script src="assets/js/kamaboko.js"></script>
+
     <script>
-        var arcs = [
-            {
-                title: "Final Selection Arc",
-                image: "assets/images/arcs/a1.png",
-                episodes: "Episodes 1-5"
-            },
-            {
-                title: "Kidnapper's Bog Arc",
-                image: "assets/images/arcs/a2.png",
-                episodes: "Episodes 6-7"
-            },
-            {
-                title: "Asakusa Arc",
-                image: "assets/images/arcs/a3.png",
-                episodes: "Episodes 8-10"
-            },
-            {
-                title: "Tsuzumi Mansion Arc",
-                image: "assets/images/arcs/a4.png",
-                episodes: "Episodes 11-14"
-            },
-            {
-                title: "Spider Mountain Arc",
-                image: "assets/images/arcs/a5.png",
-                episodes: "Episodes 15-21"
-            },
-            {
-                title: "Rehabilitation Training Arc",
-                image: "assets/images/arcs/a6.png",
-                episodes: "Episodes 22-26"
-            },
-            {
-                title: "Mugen Train Arc",
-                image: "assets/images/arcs/a7.png",
-                episodes: "Episodes 27-34"
-            },
-            {
-                title: "Entertainment District Arc",
-                image: "assets/images/arcs/a8.png",
-                episodes: "Episodes 34-44"
-            },
-            {
-                title: "Swordsmith Village Arc",
-                image: "assets/images/arcs/a9.png",
-                episodes: "Episodes 45-55"
-            },
-            {
-                title: "Hashira Training Arc",
-                image: "assets/images/arcs/a10.png",
-                episodes: "Episodes 56-63"
-            },
-            {
-                title: "Infinity Castle Arc",
-                image: "assets/images/arcs/a11.png",
-                episodes: "Movie"
-            },
-            {
-                title: "Sunrise Countdown Arc",
-                image: "assets/images/arcs/a12.png",
-                episodes: "Movie"
-            },
-        ];
 
         var arcsList = document.getElementById("arcsList");
 
@@ -279,41 +223,6 @@
     </script>
 
     <script>
-        var hashiraName = [
-            "Giyu Tomioka",
-            "Mitsuri Kanroji",
-            "Iguro Obanai",
-            "Sanemi Shinazugawa",
-            "Gyomei Himejima",
-            "Muichiro Tokito",
-            "Shinobu Kocho",
-            "Kyojuro Rengoku",
-            "Tengen Uzui"
-        ]
-
-        var positions = [
-            "Water Hashira",
-            "Love Hashira",
-            "Serpent Hashira",
-            "Wind Hashira",
-            "Stone Hashira",
-            "Mist Hashira",
-            "Insect Hashira",
-            "Flame Hashira",
-            "Sound Hashira"
-        ]
-
-        var hashiraPictures = [
-            "assets/images/hashiras/h1.png",
-            "assets/images/hashiras/h2.png",
-            "assets/images/hashiras/h3.png",
-            "assets/images/hashiras/h4.png",
-            "assets/images/hashiras/h5.png",
-            "assets/images/hashiras/h6.png",
-            "assets/images/hashiras/h7.png",
-            "assets/images/hashiras/h8.png",
-            "assets/images/hashiras/h9.png"
-        ]
 
         var hashirasList = document.getElementById("hashirasList");
 
@@ -326,42 +235,17 @@
 
                         <div class="hover-text">
                             <h2 class="card-title">`+ hashiraName[i] + `</h2>
-                            <p class="card-text">`+ positions[i] + `</p>
+                            <p class="card-text">`+ hashiraPositions[i] + `</p>
                         </div>
                     </div>
                 </div>
             </div>
         `;
         }
+
     </script>
 
     <script>
-        var uppermoonName = [
-            "Kokushibo",
-            "Doma",
-            "Akaza",
-            "Hantengu",
-            "Gyokko",
-            "Gyutaro and Daki",
-        ]
-
-        var positions = [
-            "Uppermoon One",
-            "Uppermoon Two",
-            "Uppermoon Three",
-            "Uppermoon Four",
-            "Uppermoon Five",
-            "Uppermoon Six",
-        ]
-
-        var uppermoonPictures = [
-            "assets/images/uppermoons/u1.png",
-            "assets/images/uppermoons/u2.png",
-            "assets/images/uppermoons/u3.png",
-            "assets/images/uppermoons/u4.png",
-            "assets/images/uppermoons/u5.png",
-            "assets/images/uppermoons/u6.png"
-        ]
 
         var uppermoonsList = document.getElementById("uppermoonsList");
 
@@ -381,26 +265,10 @@
             </div>
         `;
         }
+
     </script>
 
     <script>
-        var kamabokoName = [
-            "Tanjiro Kamado",
-            "Nezuko Kamado",
-            "Zenitsu Agatsuma",
-            "Inosuke Hashibira",
-            "Kanao Tsuyuri",
-            "Genya Shinazugawa",
-        ]
-
-        var kamabokoPictures = [
-            "assets/images/kamaboko/k1.png",
-            "assets/images/kamaboko/k2.png",
-            "assets/images/kamaboko/k3.png",
-            "assets/images/kamaboko/k4.png",
-            "assets/images/kamaboko/k5.png",
-            "assets/images/kamaboko/k6.png",
-        ]
 
         var kamabokoList = document.getElementById("kamabokoList");
 
@@ -418,6 +286,7 @@
             </div>
         `;
         }
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
