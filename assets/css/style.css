@@ -34,8 +34,8 @@
 .arcSection .arcsTitle {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-weight: bold;
-    font-size: 35px;
+    font-weight: 800;
+    font-size: 40px;
 }
 
 .arcsCard {
@@ -71,11 +71,59 @@
 .arcsCard .card-img-top {
     width: 100%;
     aspect-ratio: 1 / 1;
-    /* makes it a perfect square */
     object-fit: cover;
-    /* ensures image fills the square */
     border-radius: 20px;
-    /* round corners like the sample */
     background: #cfcfcf;
-    /* fallback color if image missing */
+}
+
+/* hashiras */
+.hashiraSection .hashiraName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.hashiraSection h5 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    }
+
+/* Hover card styles */
+.hashiraCard .img-hover-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img-hover-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.hover-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Hover effects */
+.img-hover-card:hover img {
+    filter: blur(4px) brightness(60%);
+    transform: scale(1.05);
+}
+
+.img-hover-card:hover .hover-text {
+    opacity: 1;
 }

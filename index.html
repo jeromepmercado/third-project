@@ -41,10 +41,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.25);
-            /* darkness level (0.45 = mild dark) */
             backdrop-filter: blur(1px);
-            /* blur the background */
-            z-index: 0;
         }
 
         /* Move content ABOVE overlay */
@@ -98,16 +95,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ARCS</a>
+                            <a class="nav-link" href="#arcs">ARCS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">HASHIRAS</a>
+                            <a class="nav-link" href="#hashiras">HASHIRAS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">UPPERMOONS</a>
+                            <a class="nav-link" href="#uppermoons">UPPERMOONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">KAMABOKO SQUAD</a>
+                            <a class="nav-link" href="#kamaboko">KAMABOKO SQUAD</a>
                         </li>
                     </ul>
                 </div>
@@ -119,9 +116,12 @@
             <div class="hero-content">
                 <div class="container text-center">
                     <h1 class="mb-2 lh-4">DEMON SLAYER</h1>
-                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mb-2">Welcome to the world of Demon Slayer — a realm where courage is forged through
+                        suffering, bonds are tested in battle, and legends rise from the ashes of despair. Explore the
+                        unforgettable arcs that shaped this journey, meet the elite Hashira who stand as humanity’s
+                        final line of defense, face the terrifying Upper Moons, and follow the Kamaboko Squad as they
+                        grow from hopeful beginners into true demon slayers. Your path begins here — step into the
+                        blade’s edge.</p>
                 </div>
             </div>
         </div>
@@ -137,6 +137,34 @@
         <div id="arcsList" class="row">
         </div>
     </div>
+
+    <div id="hashiras" class="container-fluid hashiraSection">
+        <div class="row">
+            <div class="col m-5 text-center">
+                <h1 class="hashiraName">HASHIRAS</h1>
+                <h5 class="my-3">The nine most formidable and proficient swordsmen in the Demon Slayer Corps, the
+                    Hashira are the
+                    highest-ranking members under the Corps leader. They are regarded as the "pillars" of the
+                    organization, each with a special Breathing Style and incredible abilities to fight demons. </h5>
+            </div>
+        </div>
+
+        <div id="hashirasList" class="row">
+        </div>
+    </div>
+
+    <div id="uppermoons" class="container-fluid uppermoonSection">
+        <div class="row">
+            <div class="col m-5 text-center">
+                <h1 class="uppermoonName">UPPERMOONS</h1>
+                <h5 class="my-3"></h5>
+            </div>
+        </div>
+
+        <div id="uppermoonsList" class="row">
+        </div>
+    </div>
+
 
     <script>
         var arcs = [
@@ -202,24 +230,69 @@
             },
         ];
 
-    </script>
-
-    <script>
         var arcsList = document.getElementById("arcsList");
 
-        for( i=0; i<arcs.length; i++) {
+        for (i = 0; i < arcs.length; i++) {
             arcsList.innerHTML += `
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
                 <div class="arcsCard">
-                    <img src="`+arcs[i].image+`" class="card-img-top" alt="Demon Slayer Arc">
+                    <img src="`+ arcs[i].image + `" class="card-img-top" alt="Demon Slayer Arc">
                     <div class="card-body">
-                        <h1 class="h1 my-3">`+arcs[i].title+`</h1>
-                        <p class="card-text">`+arcs[i].episodes+`</p>
+                        <h1 class="h1 my-3">`+ arcs[i].title + `</h1>
+                        <p class="card-text">`+ arcs[i].episodes + `</p>
                     </div>
                 </div>
             </div>
             `;
         }
+
+    </script>
+
+    <script>
+        var hashiraName = [
+            "Giyu Tomioka",
+            "Mitsuri Kanroji",
+            "Iguro Obanai",
+            "Sanemi Shinazugawa",
+            "Gyomei Himejima",
+            "Muichiro Tokito",
+            "Shinobu Kocho",
+            "Kyojuro Rengoku",
+            "Tengen Uzui"
+        ]
+
+        var hashiraPictures = [
+            "assets/images/hashiras/h1.png",
+            "assets/images/hashiras/h2.png",
+            "assets/images/hashiras/h3.png",
+            "assets/images/hashiras/h4.png",
+            "assets/images/hashiras/h5.png",
+            "assets/images/hashiras/h6.png",
+            "assets/images/hashiras/h7.png",
+            "assets/images/hashiras/h8.png",
+            "assets/images/hashiras/h9.png"
+        ]
+
+        var hashirasList = document.getElementById("hashirasList");
+
+        for (i = 0; i < hashiraName.length; i++) {
+            hashirasList.innerHTML += `
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="hashiraCard my-3">
+                    <div class="img-hover-card">
+                        <img src="` + hashiraPictures[i] + `" class="card-img-top" alt="Hashira">
+
+                        <div class="hover-text">
+                            <h5 class="card-title">`+ hashiraName[i] + `</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        }
+    </script>
+
+    <script>
 
     </script>
 
