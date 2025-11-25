@@ -1,0 +1,81 @@
+/* navbar css */
+.navbar-custom {
+    backdrop-filter: blur(30px) brightness(30%);
+    /* padding: 10px 15px; */
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* arcs */
+.arcSection .arcsTitle {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.arcsCard {
+    background-color: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.arcsCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.arcsCard .card-body h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+.arcsCard .card-body p {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.arcsCard .card-img-top {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* makes it a perfect square */
+    object-fit: cover;
+    /* ensures image fills the square */
+    border-radius: 20px;
+    /* round corners like the sample */
+    background: #cfcfcf;
+    /* fallback color if image missing */
+}
