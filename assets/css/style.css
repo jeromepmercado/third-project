@@ -1,18 +1,19 @@
 /* navbar css */
 .navbar-custom {
-    backdrop-filter: blur(30px) brightness(30%);
+    backdrop-filter: blur(20px) brightness(20%);
     /* padding: 10px 15px; */
 }
 
 .navbar-brand {
     color: #ffffff !important;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Segoe UI', sans-serif;
 }
 
 .nav-link {
     color: #ffffff !important;
+    font-size: 13px;
     font-weight: 500;
     margin-left: 25px;
 }
@@ -81,11 +82,12 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .hashiraSection h5 {
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     color: white;
 }
 
@@ -135,11 +137,12 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .uppermoonSection h5 {
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     color: white;
 }
 
@@ -161,11 +164,12 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .kamabokoSection h5 {
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     color: white;
 }
 
@@ -179,4 +183,22 @@
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
+}
+
+/* footer */
+.footer {
+    background: #000000;
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .credits {
+    font-size: 10px;
+    color: #838282;
 }
