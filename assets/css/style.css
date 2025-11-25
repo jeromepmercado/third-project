@@ -87,7 +87,7 @@
 .hashiraSection h5 {
     font-family: 'Poppins', sans-serif;
     color: white;
-    }
+}
 
 /* Hover card styles */
 .hashiraCard .img-hover-card {
@@ -110,7 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 5px;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(3px);
@@ -141,14 +141,40 @@
 .uppermoonSection h5 {
     font-family: 'Poppins', sans-serif;
     color: white;
-    }
+}
 
 .uppermoonSection p {
     font-family: 'Poppins', sans-serif;
     color: white;
-    }
+}
 
 .uppermoonCard .img-hover-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* kamaboko squad */
+
+.kamabokoSection .kamabokoName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.kamabokoSection h5 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.kamabokoSection p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.kamabokoCard .img-hover-card {
     position: relative;
     width: 100%;
     overflow: hidden;

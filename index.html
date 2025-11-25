@@ -171,6 +171,24 @@
         </div>
     </div>
 
+    <!-- kamaboko squad -->
+    <div id="kamaboko" class="container-fluid kamabokoSection">
+        <div class="row">
+            <div class="col m-5 text-center">
+                <h1 class="kamabokoName">KAMABOKO SQUAD</h1>
+                <h5 class="my-3">Tanjiro Kamado, Zenitsu Agatsuma, Inosuke Hashibira, and Tanjiro's demon sister, Nezuko
+                    Kamado, make up the primary squad of young demon slayers in the anime and manga Demon Slayer, which
+                    fans called the Kamaboko Squad. The name originates from Inosuke mispronouncing Tanjiro's name as
+                    "Gonpachiro Kamaboko," a food product. While initially referring to the main trio, the term is
+                    sometimes expanded in fan discussions to include other characters like Kanao Tsuyuri and Genya
+                    Shinazugawa. </h5>
+            </div>
+        </div>
+
+        <div id="kamabokoList" class="row">
+        </div>
+    </div>
+
 
     <script>
         var arcs = [
@@ -297,7 +315,7 @@
             hashirasList.innerHTML += `
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                 <div class="hashiraCard my-3">
-                    <div class="img-hover-card">
+                    <div class="img-hover-card rounded-5">
                         <img src="` + hashiraPictures[i] + `" class="card-img-top" alt="Hashira">
 
                         <div class="hover-text">
@@ -345,12 +363,49 @@
             uppermoonsList.innerHTML += `
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                 <div class="uppermoonCard my-3">
-                    <div class="img-hover-card">
+                    <div class="img-hover-card rounded-5">
                         <img src="` + uppermoonPictures[i] + `" class="card-img-top" alt="Uppermoon">
 
                         <div class="hover-text">
                             <h2 class="card-title">`+ uppermoonName[i] + `</h2>
                             <p class="card-text">`+ positions[i] + `</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        }
+    </script>
+
+    <script>
+        var kamabokoName = [
+            "Tanjiro Kamado",
+            "Nezuko Kamado",
+            "Zenitsu Agatsuma",
+            "Inosuke Hashibira",
+            "Kanao Tsuyuri",
+            "Genya Shinazugawa",
+        ]
+
+        var kamabokoPictures = [
+            "assets/images/kamaboko/k1.png",
+            "assets/images/kamaboko/k2.png",
+            "assets/images/kamaboko/k3.png",
+            "assets/images/kamaboko/k4.png",
+            "assets/images/kamaboko/k5.png",
+            "assets/images/kamaboko/k6.png",
+        ]
+
+        var kamabokoList = document.getElementById("kamabokoList");
+
+        for (i = 0; i < kamabokoName.length; i++) {
+            kamabokoList.innerHTML += `
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="kamabokoCard my-3">
+                    <div class="img-hover-card rounded-5">
+                        <img src="` + kamabokoPictures[i] + `" class="card-img-top" alt="Hashira">
+                        <div class="hover-text">
+                            <h2 class="card-title">`+ kamabokoName[i] + `</h2>
                         </div>
                     </div>
                 </div>
