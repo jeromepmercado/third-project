@@ -209,11 +209,19 @@
             arcsList.innerHTML += `
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
                 <div class="arcsCard">
-                    <img src="`+ arcs[i].image + `" class="card-img-top" alt="Demon Slayer Arc">
-                    <div class="card-body">
-                        <h1 class="h1 my-3">`+ arcs[i].title + `</h1>
-                        <p class="card-text">`+ arcs[i].episodes + `</p>
+                    <div class="img-hover-card">
+                        <img src="`+ arcs[i].image + `" class="card-img-top" alt="Demon Slayer Arc">
+
+                        <div class="hover-text">
+                            <p class="card-text">`+ arcs[i].overview + `</p>
+                        </div>
                     </div>
+
+                <div class="card-body">
+                    <h1 class="h1 my-3">`+ arcs[i].title + `</h1>
+                    <p class="card-text">`+ arcs[i].episodes + `</p>
+                </div>
+
                 </div>
             </div>
             `;
